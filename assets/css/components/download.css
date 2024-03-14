@@ -1,0 +1,103 @@
+/* Download */
+.download {
+    margin-top: 160px;
+    border-radius: 24px;
+    background: #7264d6;
+    padding: 49px 112px;
+    z-index: -1;
+}
+
+
+.download .row {
+    position: relative;
+    
+}
+
+.download .download__wrap {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.download .subtitle,
+.download .title,
+.download .desc {
+    color: #fff;
+}
+
+.download .subtitle::before {
+    background-color: #fff;
+}
+
+.download .desc {
+    width: 435px;
+    max-width: 100%;
+}
+
+.download .download__app {
+    margin-top: 38px;
+    width: 435px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.download .download__app-img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.download .download__deco {
+    position: absolute;
+    inset: 0;
+}
+
+.download .download__deco-img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+/* PC */
+@media screen and (min-width: 992px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991px) {
+    .download .download__deco {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .download {
+        margin-top: 100px;
+        padding: 12px;
+    }
+
+    .download .col-12 {
+        padding: 0;
+    }
+
+    .download .desc {
+        width: 350px;
+    }
+
+    .download .download__app {
+        gap: 10px;
+    }
+
+  
+}

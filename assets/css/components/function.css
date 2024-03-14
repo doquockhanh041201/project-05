@@ -1,0 +1,143 @@
+/* Function */
+.function {
+    margin-top: 160px;
+}
+
+/* Function Media */
+.function .function__media {
+    position: relative;
+    display: inline-flex;
+}
+
+.function .function__media-img {
+    display: block;
+    width: 413px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.function .function__img-wrap::after {
+    content: "";
+    background-image: url(../../img/Rectangle.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 90%;
+    z-index: -1;
+}
+
+.function .function__card {
+    position: absolute;
+    top: 64px;
+    right: 32px;
+}
+
+.function .function__card-img {
+    width: 64px;
+    height: 46px;
+}
+
+.function .function__check {
+    position: absolute;
+    right: -90px;
+    bottom: 74px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.function .function__check-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.function .function__check-title {
+    color: #212832;
+    font-family: Inter, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.function .function__check-desc {
+    color: #696d76;
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* Info */
+.function .function__list {
+    margin-top: 70px;
+}
+
+.function .function__item {
+    margin-top: 28px;
+}
+
+.function .function__item-title {
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.function .function__item-desc {
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+/* PC */
+@media screen and (min-width: 992px) {
+   
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .function .row {
+        align-items: center;
+    }
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991px) {
+    .function {
+        margin-top: 100px;
+    }
+
+    .function .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .function .col-12 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .function .function__media {
+        margin-bottom: 80px;
+    }
+
+    .function .function__list {
+        margin-top: 50px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .function .function__card,
+    .function .function__check {
+        display: none;
+    }
+}

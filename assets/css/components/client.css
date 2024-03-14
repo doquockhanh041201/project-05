@@ -1,0 +1,237 @@
+/* Client */
+.client {
+    margin-top: 160px;
+}
+
+.client .client__header {
+    text-align: center;
+
+}
+
+/* Client reviews */
+.client__slides {
+    display: flex;
+    align-items: center;
+}
+
+.client__reviews {
+    margin-top: 70px;
+}
+
+.client__reviews .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.client .client .client__reviews-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client .client__reviews-content {
+    padding: 42px 28px;
+    background-color: #fff;
+    border: 1px solid #dfe2e8;
+    position: relative;
+    cursor: pointer;
+}
+
+.client .client__reviews-content:before {
+    content: "";
+    position: absolute;
+    bottom: -10.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 41px 41px 0;
+    border-style: solid;
+    border-color: #dfe2e8 transparent transparent transparent;
+    z-index: -1;
+}
+
+.client .client__reviews-content:after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-width: 40px 40px 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+
+    transition: 0.3s linear;
+}
+
+.client .client__reviews-content:hover {
+    border: none;
+    box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.07);
+}
+
+.client .client__reviews-content:hover::before {
+    border-color: #fff transparent transparent transparent;
+}
+
+.client .client__reviews-text {
+    color: #696d76;
+    font-size: 2.2rem;
+    font-style: italic;
+    line-height: 1.55;
+}
+
+/* Client's info */
+.client .client__person {
+    margin-top: 80px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.client .client__person-img {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.client .client__reviews-item .client__person::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 103px;
+    height: 103px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.client__reviews-item:nth-child(odd) .client__person::before {
+    background: #4ab5e3;
+}
+
+.client__reviews-item:nth-child(even) .client__person::before {
+    background: #439f90;
+}
+
+.client .client__person-info {
+    margin-top: 20px;
+}
+
+.client .client__person-name {
+    color: #070052;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.39;
+}
+
+.client .client__person-position {
+    color: #696d76;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+/* Btn previous next */
+
+.client__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1.5px solid #9B9FAB;;
+    background: transparent;
+    color: #9B9FAB;
+}
+
+.client__control:hover {
+    background: #7264D6;
+    border-color: #7264D6;
+    color: #fff;
+    cursor: pointer;
+}
+
+.client__control:nth-of-type(2) {
+    margin-left: auto;
+}
+
+
+/* 3 dots */
+.client .dots {
+    margin-top: 36px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: 20px;
+    height: 5px;
+    border: 1px solid #9B9FAB;
+    transition: 0.3s linear;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dot--active {
+    border: 1px solid #7264D6;
+    background-color: #7264D6;
+}
+
+.dot + .dot {
+    margin-left: 8px;
+}
+
+
+/* PC */
+@media screen and (min-width: 992px) {
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991px) {
+    .client .client__header {
+        text-align: inherit;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .client {
+        margin-top: 100px;
+    }
+
+    .client__reviews {
+        margin-top: 0;
+    }
+
+    .client .client__reviews-item {
+        margin-top: 100px;
+    }
+
+    .client .client__reviews-text {
+        font-size: 1.8rem;
+    }
+
+    .client .client__person-name  {
+        font-size: 2rem;
+    }
+
+    .client .client__person-position {
+        font-size: 1.5rem;
+    }
+
+    .client .client__control {
+        display: none;
+    }
+}

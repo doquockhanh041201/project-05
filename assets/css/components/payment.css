@@ -1,0 +1,182 @@
+/* Payment */
+
+.payment {
+    margin-top: 160px;
+}
+
+/* Payment info */
+.payment .payment__list {
+    margin-top: 28px;
+    margin-bottom: 20px;
+}
+
+.payment .payment__item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #7264d6;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    margin-right: 5px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.payment .payment__item {
+    position: relative;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    margin-bottom: 18px;
+    padding-left: 25px;
+}
+
+/* Payment media */
+.payment .offset-lg-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.payment .payment__media {
+    position: relative;
+    display: inline-flex;
+}
+
+.payment .payment__media-img {
+    width: 400px;
+    max-width: 100%;
+}
+
+.payment .payment__account {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    display: inline-flex;
+    align-self: center;
+    justify-content: center;
+    column-gap: 71px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+    padding: 23px 13px;
+}
+
+.payment .payment__account-left {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.payment .payment__account-right {
+    text-align: right;
+}
+
+.payment .payment__card-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.payment .payment__account-title {
+    color: #212832;
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.payment .payment__account-text {
+    color: #696d76;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.payment .payment__account-number {
+    color: #212832;
+    font-family: Inter, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.payment .payment__account-date {
+    color: #696d76;
+    font-family: Inter;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.payment .payment__check {
+    position: absolute;
+    bottom: -57px;
+    right: 86px;
+    display: inline-block;
+    padding: 15px 53px 15px 15px;
+    border-radius: 1.6rem;
+    background: #439f90;
+}
+
+.payment .payment__check-title {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.payment .payment__check-number {
+    margin-top: 6px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* PC */
+@media screen and (min-width: 992px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991px) {
+    .payment {
+        margin-top: 100px;
+    }
+
+    .payment .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .payment .col-12 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .payment .offset-lg-1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .payment .payment__media {
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .payment .payment__account,
+    .payment .payment__check {
+        display: none;
+    }
+}

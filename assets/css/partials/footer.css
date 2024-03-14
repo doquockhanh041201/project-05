@@ -1,0 +1,118 @@
+/* Footer */
+.footer {
+    margin-top: 160px;
+    background: #fafbff;
+}
+
+.footer__title {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    margin-bottom: 24px;
+}
+
+.footer .footer__text {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.footer .footer__wrap {
+    padding-top: 105px;
+    padding-bottom: 28px;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer .logo-img {
+    margin-right: 1rem;
+}
+
+.footer .email {
+    text-decoration-line: underline;
+}
+
+/* Contact */
+.footer .footer__contact-newsletter {
+    margin-top: 48px;
+}
+
+.footer .footer__contact-newsletter input[type="email"] {
+    border-radius: 0.6rem;
+    border: 1px solid #8e919a;
+    padding: 12px;
+    margin-right: 20px;
+    height: 52px;
+    width: 270px;
+    background-color: transparent;
+}
+
+.footer .footer__contact-newsletter input[type="email"]::placeholder {
+    color: #8e919a;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+/* Footer info */
+.footer .footer__info {
+    display: flex;
+    padding-top: 54px;
+    padding-bottom: 28px;
+}
+
+/* Copyright */
+.footer .copyright {
+    background: #7264d6;
+    padding: 28px 0;
+}
+
+.footer .copyright-text {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+/* PC */
+@media screen and (min-width: 992px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991px) {
+    .footer {
+        margin-top: 100px;
+    }
+    
+    .footer .footer__wrap {
+        row-gap: 30px;
+    }
+
+    .footer .footer__info .row {
+        justify-content: space-between;
+    }
+    .footer .footer__contact-newsletter {
+        margin-top: 30px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .footer .footer__contact-newsletter input[type="email"] {
+        margin-bottom: 30px;
+    }
+}
